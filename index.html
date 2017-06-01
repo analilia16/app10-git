@@ -1,0 +1,525 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Aplicacion Diez</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  
+    <!--grupo CSS-->
+    <link rel="stylesheet" href="css/tema-app10.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/acciones.js"></script>
+    <script src="phonegap.js"></script>
+    <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+  </head>
+<body onLoad="MM_preloadImages('imagenes/16.jpg','imagenes/8.jpg','imagenes/48.jpg','imagenes/46.jpg','imagenes/28.jpg','imagenes/15.jpg')">
+
+     <div data-role="page" id="principal" data-theme="b">
+      <div data-role="header" data-add-back-btn="true"    data-back-btn-theme="b">
+       <h1 align="center">Centro de Bachillerato Tecnológico Industrial y de Servicios No.16 </h1>
+     </div>
+    <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Qué es DGETI?</h2>
+</a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Acerca de CBTIS 16</h2>
+</a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Requisitos para inscripción y ubicación de la institución</h2>
+</a>
+     </li>
+     <h3 align="center">ESPECIALIDADES</h3>
+     <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Técnico en Programación</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r" >
+       <h2>Técnico en Electricidad</h2></a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Técnico en Mecánica Industrial</h2>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Técnico en Logística</h2>
+      </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>CAED (Centro de Atención para Estudiantes con Discapacidad)</h2>
+</a>
+     </li>
+      </ul>
+      <div data-role="main" class="ui-content" align="center">
+      <div class="ui-content" data-content-theme="false" data-role="collapsible">
+       <h1>Elaborado por:</h1>
+        <div align="center">
+          <h1>DATOS DEL ESTUDIANTE</h1>
+      </div>
+      <div data-role="main" class="ui-content" align="center">
+       <p><strong>INSTITUCIÓN:</strong> Centro de Bachillerato Tecnológico Industrial y de Servicios No.16</p>
+       <p><strong>PROFESOR:</strong>Lic. José Antonio Gómez Hernández</p>
+      <p><strong>NOMBRE:</strong> Ana Lilia Flores Romero</p>
+      <p><strong>ESPECIALIDAD</strong> Programación</p>
+      <p><strong>SEMESTRE:</strong> 4to</p>
+      <p><strong>GRUPO:</strong> "F"</p>
+      <p><strong>NO.LISTA:</strong> 8</p>
+      <p><strong>PERIODO ESCOLAR:</strong> Febrero-Julio 2017</p>
+      <img src="imagenes/elaboradopor.jpg" width="250" height="448">
+      
+        </div>
+    </div>
+</div>
+      </div>    
+      <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+       <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+       </div>
+       <div>
+        <h4>PROYECTO FINAL</h4>
+        <h4>Ana Lilia Flores Romero</h4>
+       </div>
+      </div>
+     </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>¿Qué es DGETI?</h1>
+      </div>
+      <div class="ui-content" align="center">
+        <p>La Dirección General de Educación Tecnológica Industrial es una dependencia adscrita a la Subsecretaría de Educación Media Superior (SEMS), dependiente de la Secretaría de Educación Pública (SEP) que ofrece el servicio educativo del nivel medio superior tecnológico. El 16 de Abril de 1971 es publicado en el Diario Oficial de la Federación el acuerdo presidencial por el que se modifica la estructura orgánica administrativa de la SEP y se da paso a la creación de la DGETI, en agosto de ese mismo año se publican las funciones que tendrá esta institución y se integran a ella los centros de capacitación para el trabajo industrial, escuelas tecnológicas industriales, los centros de estudios tecnológicos en el Distrito Federal y los centros de estudios tecnológicos foráneos.</p>
+        <p>Actualmente la DGETI es la institución de educación media superior tecnológica más grande del país, con una infraestructura física de 456 planteles educativos a nivel nacional, de los cuales 168 son CETIS y 288 CBTIS; Además proporciona a los organismos descentralizados de los gobiernos de las entidades federativas, que impartan la educación tecnológica industrial competencia de esta unidad administrativa, la asistencia académica, técnica y pedagógica a los 652 CECyTEs.</p>
+        <img src="imagenes/DGETI.jpg" width="196" height="231" >
+        <div data-role="main" class="ui-content" align="center">
+     <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+      <li class="ui-first-child ui-last-child">
+        <a href="http://www.dgeti.sep.gob.mx/index.php/quienes-somos/82-historia-dgeti" target="_self" data-role="button">
+        <h2>Historia de la Educación Tecnológica en México</h2>
+        </a>
+       </li> 
+      </ul>
+     </div>
+     </div>
+         <div data-role="main" class="ui-content">
+      <div class="ui-content" data-content-theme="false" data-role="collapsible">
+       <h1>Misión, Visión y Objetivos</h1>
+        <div>
+        <h3>Misión:</h3>
+        <p>Formar ciudadanos con las capacidades requeridas para propiciar y participar en una sociedad del conocimiento, tanto en el ámbito laboral como social.</p>
+        <h3>Visión:</h3>
+        <p>Ser una institución de educación media superior certificada, orientada al aprendizaje y desarrollo de conocimientos tecnológicos y humanísticos.</p>
+        <h3>Objetivo:</h3>
+        <p>Formar bachilleres técnicos que desarrollen, fortalezcan y preserven una cultura tecnológica y una infraestructura industrial y de servicios que coadyuven y satisfagan las necesidades económicas y sociales del país.</p>
+        <div class="ui-content">
+        <h3>Objetivos Específicos:</h3>
+        <p><strong>Establecer y desarrollar el sistema de planeación y evaluación de la operación, así como desarrollo académico y administrativo de la Dirección General de Educación Tecnológica Industrial (DGETI) con el fin de propiciar su crecimiento y consolidación en la formación de bachilleres técnicos.</strong></p>
+        <p>Desarrollar, implantar y coordinar los criterios y metodologías de gestión académico administrativa en los planteles educativos y subdirecciones de enlace, así como en el órgano central de la DGETI, desde las proyecciones de planeación estratégica, su planeación operativa, presupuestación, desarrollo, evaluación y mejora de los procesos y servicios.</p>
+        <p><strong>Ofrecer a los alumnos el acceso a instalaciones limpias, materiales adecuados, equipo moderno y en buen estado, así como computadoras conectadas a internet en los planteles de la DGETI.</strong></p>
+        <p>Capacitar en los temas del “Servicio Profesional Docente (SPD)” a los docentes de la Dirección General de Educación Tecnológica Industrial para lograr un mejor funcionamiento del proceso educativo de la DGETI y sus planteles incorporados.
+              Elaboración y aplicación de mejoras a los planes y programas de estudio y propiciar que sus contenidos sean congruentes con el avance tecnológico, que respondan con la dinámica del sector productivo.</p>
+        <p><strong>Que los docentes apliquen enfoques pedagógicos modernos en sus métodos de enseñanza y recursos didácticos.</strong></p>
+        <p>Desarrollar proyectos de investigación educativa que posibiliten el conocimiento de las causas que provocan el fracaso y la deserción escolar,  permitan el diseño y puesta en marcha de propuestas de solución.
+              Desarrollar prototipos para su aplicación como recurso didáctico para la mejora de los métodos de enseñanza.</p>
+        <p><strong>Dirigir, controlar y supervisar el desarrollo de los programas de apoyo a la operación estatal del sistema de educación tecnológica industrial y de servicios así como a los planteles incorporados a este sistema educativo, que permitan la supervisión de los mismos y la emisión de REVOE de acuerdo a los lineamientos establecidos.</strong></p>
+        <p>Realizar actividades que permitan el desarrollo de competencias en la formación cultural, deportiva, cívica y social de alumnos de la DGETI.
+              Mejorar la eficiencia terminal mediante programas de tutorías y de acompañamiento académico.
+              Fomentar la orientación educativa de alumnos de la DGETI.
+              Fortalecer la vinculación con los sectores productivo, público, privado y social con el fin de mejorar  el servicio educativo y beneficiar  a los alumnos y egresados de los planteles de la DGETI.</p>
+        <p><strong>Planear, coordinar, controlar, gestionar y abastecer los recursos humanos, financieros y materiales disponibles para el cumplimiento de la misión institucional.
+              Promover y coordinar el establecimiento y desarrollo de los servicios educativos tecnológicos y de servicios ofrecidos por los Organismos Descentralizados Estatales en términos de los Convenios de Coordinación y Anexo de Ejecución.</strong></p>
+        <p>Presentar y coordinar la difusión y apoyo técnico de los lineamientos para los procesos académicos, de evaluación, acreditación y certificación de los Organismos Descentralizados Estatales de los Colegios de Estudios Científicos y Tecnológicos.</p>
+        <p><strong>Desarrollar y verificar la operación de los mecanismos para el seguimiento y evaluación del Subsistema con el fin de sustentar las propuestas para su desarrollo.
+              Presentar estudios prospectivos de crecimiento y desarrollo de los servicios de educación media superior tecnológica industrial y de servicios.</strong></p>
+          </div>
+        </div>        
+   </div>
+   </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>PROYECTO FINAL, ALFR</h4>
+     </div>
+    </div> 
+    </div>
+    
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <div class="ui-content" align="center">
+      <h1>Acerca de CBTIS 16</h1>
+      <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/1.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/16.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/23.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/25.jpg" alt="" title="" id="wows1_3"/></li>
+		<li><img src="data1/images/26.jpg" alt="" title="" id="wows1_4"/></li>
+		<li><img src="data1/images/28.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><img src="data1/images/30.jpg" alt="" title="" id="wows1_6"/></li>
+		<li><img src="data1/images/31.jpg" alt="Campo deportivo" title="Campo deportivo" id="wows1_7"/></li>
+		<li><img src="data1/images/33.jpg" alt="" title="" id="wows1_8"/></li>
+		<li><img src="data1/images/37.jpg" alt="" title="" id="wows1_9"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/38.jpg" alt="slider" title="" id="wows1_10"/></a></li>
+		<li><img src="data1/images/43.jpg" alt="" title="" id="wows1_11"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data1/tooltips/1.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/16.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/23.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/25.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/26.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/28.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/30.jpg" alt=""/>7</span></a>
+		<a href="#" title="Campo deportivo"><span><img src="data1/tooltips/31.jpg" alt="Campo deportivo"/>8</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/33.jpg" alt=""/>9</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/37.jpg" alt=""/>10</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/38.jpg" alt=""/>11</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/43.jpg" alt=""/>12</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<div data-role="main" class="ui-content">
+  <div class="ui-content" data-content-theme="false" data-role="collapsible">
+       <h2>BREVE RESEÑA HISTORICA DEL C.B.T.i.s. No. 16</h2>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/16.jpg',1)"><img src="imagenes/1.jpg" name="Image14" width="250" height="149" id="Image14"></a>
+       <p>El presente trabajo, tiene como finalidad conocer aspectos sobre la evolución del C.B.T.i.s. No. 16 para lo cual se muestran algunas de sus raíces históricas. El día 08 de Agosto, el comité que representa la Federación de obreros y Campesinos de la región de Atlixco Pué; hizo entrega al Ingeniero Estrada Cuesta en representación del C.A.P.E.C.E., un terreno de 5966.38 metros cuadrados de superficie para la construcción de la Escuela Técnica Industrial No.46 de esta ciudad, procediendo a su edificación. El día 25 de febrero de 1962, en una de las oficinas que forman la H. Cámara de Trabajo C.R.O.M. de Atlixco, empezó a laborar la Dirección de la E.T.I. No. 46., fungiendo como primer Director el C. Ing. Francisco Linares Jiménez, auxiliado por el C. Tec. Oscar Rodríguez Grijalva y el personal administrativo formado por las C. C. Eva Judith Rosas Bonillas, Ma. Cristina Fernández Sosa, Carolina Rosas Zarate y el C. Juan Apatenco Fernández. A los quince días después se hizo el traslado al edificio que ocupa dicha escuela, la cual constaba de 5 salones de clase, 5 talleres y 2 salones de dibujo. El día 1 de Abril de 1962, se iniciaron las labores con tres grupos de secundaria con las especialidades de ajuste de banco y maquinas, herramientas, maquinas de combustión interna, modas, radio y T.V., ELECTRONICA, ELECTRICIDAD Y EQUIPO AGRICOLA, además hubo tres grupos de Preparatoria Técnica Elemental en las especialidad de; maquinas de combustión interna, electricidad, ajuste de banco, equipo agrícola , haciendo un total de 169 alumnos que, en su mayoría eran campesinos y trabajadores de las diferentes fabricas de la región. Los maestros fundadores fueron:</p>
+       <p>Prof. Carlos Castillo Rodríguez</p>
+       <p>Profa. María de la Luz Munive Dávila</p>
+       <p>Lic. David Marroquín</p>
+       <p>Profa. Esperanza Villegas Cortez</p>
+       <p>Dr. Salvador Esperón Unzueta</p>
+       <p>Prof. Pablo Barrera</p>
+       <p>Prof. Luis Martínez Matamoros</p>
+       <p>Prof. Marco Antonio Morales Arador</p>
+       <p>Prof. Sirvió Tulio Guillen Burguete</p>
+       <p>Prof. Fernando Domínguez Almeida</p>
+       <p>Prof. Lorenzo Morales</p>
+       <p>Prof. Elías Anderica Díaz</p>
+       <p>Se inauguro oficialización el 18 de noviembre de 1963, a cargo del entonces Presidente de la Republica Lic. Adolfo López Mateos, llevando el nombre de &ldquo;Escuela Técnica Industrial José Ma. Morelos y Pavón&rdquo;. Hasta 1964, empezó a funcionarla prefectura siendo el primer prefecto el C. Sergio Linares Casanova, agregándose posteriormente el C. Juan de Dios F.C. (1965). En ese mismo año se lleva a cabo la construcción del edificio de Vocacional, que consta de cuatro aulas, tres laboratorios y un salón de dibujo y tribunas. También en ese año Enero(1965), se inicia el primer grupo de Preparatoria Técnica, siendo maestros fundadores como Director el Ing. Francisco Linares Jiménez, así como docentes:</p>
+       <p>Prof. Rubén Nava Arias</p>
+       <p>Ing. Miguel Lima Torres</p>
+       <p>Ing. Alfredo Lobato Contreras</p>
+       <p>Ing. Armando Pérez Barrera</p>
+       <p>Lic. Armando Guerra</p>
+       <p>Prof. Felipe Cervantes Irigoyen</p>
+       <p>Prof. Pablo Barrera</p>
+       <p>Ing. Miguel Zaldívar Gutiérrez</p>
+       <p>El 30 de Diciembre de 1966, deja la dirección del plantel el Ing. Francisco Linares, funcionario de la escuela con cinco grupo de primer año, tres de segundo y dos de tercero de secundaria Técnica y dos de primero y uno de segundo de Preparatoria Técnica, además un grupo de preparatoria Técnica Elemental. A la salida de Francisco Linares surgen constantes cambios en la Dirección en el siguiente orden:</p>
+       <p>Ing. Rodolfo Bazán duración 2 meses</p>
+       <p>Ing. Mario Landeros duración 12 meses</p>
+       <p>Ing. Armando de Anda</p>
+       <p>Ing. Hugo Carreto Gonzales duración 5 meses</p>
+       <p>Ing. Jaime Zaragoza Bueno duración 3 meses</p>
+       <p>En 1967, empezó a funcionar la biblioteca oficialmente con un total de 250 libros, quedando al frente de la misma la C. Graciela Ramos Castro. A finales del año 1967, se viven los años más difíciles de la Institución en su administración y su prestigio, debido a políticas internas. Aproximadamente en Febrero de 1968, se hizo cargo de la Dirección de la escuela el C. Prof. Francisco Luna Pérez, quedando como subdirección el Ing. Jaime Zaragoza Bueno. En este mismo año se inician los trámites para la construcción de dos locales adecuados para los talleres de ajuste de banco y mecánica automotriz procediendo a su edificación; se agregan además a la prefectura tres personas más que son: los C.C. Sebastián Alonso Luna, Salvador Jiménez Campos y Luis Barranco Arezca. Es notable el incremento del equipo de laboratorio y talleres durante los años de 1968 y 1969. En el año de 1970, ocupa el cargo de Subdirector el C. Antonio Serrano Alonso, en consecuencia el C. Jaime Zaragoza Bueno, paso a ser Subdirector Técnico (provisional por unos días). También se inicio el Departamento de Orientación Vocacional, a cargo de la C. Aurora Trivera, y se agrega el primer prefecto vespertino el C. Natalio Ramírez. En el año de 1972, se amplían los talleres de Electrónica y Electricidad, cambiando las oficinas al lugar que ocupan actualmente quedando en su lugar la biblioteca. En este año se agrega a la prefectura al C. Ricardo del Moral Ramírez. En el periodo 72-73, cambia el nombre de la escuela de E.T.I. No. 46 a C.E.T. No. 46 y el periodo 73-74 por el de C.E.C.Y.T. No. 46. En 1973, se construyo un local para el taller de mantenimiento de la escuela. El 2 de febrero de 1976, la D.G.E.T.I., nombra como coordinación de Actividades Tecnológicas al C. Ricardo Cano Castellanos y en esta misma fecha es nombrado como coordinador de Actividades Académicas al C. Juan Carlos Jiménez. En 1976, se construye una sala audiovisual y un laboratorio de Idiomas, en este año es nombrado como coordinador de Actividades Académicas de la E.T.I.No.46 en forma oficial, y del C.E.C.Y.T. No. 46 en forma provisional el Ing. Miguel Zaldívar Gutiérrez. Durante el periodo de Francisco Luna Pérez, se recupera la institución de los problemas que le habían deteriorado. Alcanzando un alto prestigio en la región. A finales de 1976 el Prof. Francisco Luna Pérez es ascendido por lo que ocupa la Dirección de la Institución el C. Tec. Jorge Iván Alberto Solís. En el periodo de 1976-1977, se hace la separación oficial de la vocacional como C.E.C.Y.T. No.46 y la secundaria como E.T.I. No. 160. Se incrementa la prefectura con los ciudadanos, Martin Domínguez, Carlos Orduña, Raúl García González y deja de funcionar el departamento de Orientación Vocacional, debido a cambio de estructura educativa. En 1977, es ratificado en el cargo de jefe de Servicios Docentes el Ing. Miguel Zaldívar Gutiérrez y como coordinador de talleres y laboratorios el Ing. Rodolfo Clemente Mendoza. El mes de enero de n1978, deja la dirección del plantel le Tec. Jorge Iván Alberto Solís, para ocuparlo el Ing. Eduardo Rodríguez Serrano. El día 28 de marzo de 1978, deja la dirección del Plantel el Tec. Jorge Iván Alberto Solís, para ocuparlo el Ing. Eduardo Rodríguez Serrano. El día 28 de marzo de 1978, deja el puesto de la Coordinación el Ing. Clemente Mendoza y al 03 de Abril del mismo año deja la jefatura de servicios docentes el Ing. Miguel Zaldívar Gutiérrez, ocupándola provisionalmente el Ing. Alberto Francisco Meléndez Tecuanhuey. En agosto de 1978, dejo a la dirección de plantel el Ing. Eduardo Rodríguez Serrano. En septiembre de 1978, ocupo la Dirección del plantel el Ing. Jorge Gonzales Méndez, durante este periodo, se incrementaron los grupos del turno vespertino. En septiembre de 1978, ocupo la jefatura de servicios docentes el Ing. José Couto Jimarez y en octubre de 1979 ocupo la oficina de coordinación con el sector Productivo el Ing. Jesús Matías López Avalos. En octubre de 1980, dejo la dirección del plantel el Ing. Jorge González Méndez, y el 12 de enero de 1981 la ocupo el Ing. Raúl García y Ambriz. En noviembre de 1981, fue designado subdirector Académico por la D.G.E.T.I. el Ing. Alberto Francisco Meléndez Tecaanhuey. Fue en esos periodos cuando dieron fin a los tramites iniciados por un grupo de maestros logrando la construcción del edificio propio del que a partir de septiembre de 1981, llevaría el nombre de Centro de Bachillerato Tecnológico Industrial y de Servicios No. 16 (C.B.T.i.s. No. 16). </p>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/8.jpg',1)"><img src="imagenes/4.jpg" name="Image15" width="250" height="149" id="Image15"></a> </div>
+        </div>
+     <P><strong>MISIÓN</strong></P>
+     <p>Formar personas con conocimientos tecnológicos en las áreas industrial, comercial y de servicios, a través de la preparación de profesionales técnicos y bachilleres, con el fin de contribuir al desarrollo sustentable del país.</p>
+     <p> </p>
+     <p><strong>VISIÓN</strong></p>
+     <p>Ser una institución que proporcione una formación integral y pertinente de acuerdo a las exigencias derivadas de la competitividad mundial y el entorno y vocación local, además de tener la flexibilidad para satisfacer los intereses, aspiraciones y posibilidades de la población que demanda este nivel educativo en nuestro plantel.</p>
+     <div data-role="main" class="ui-content" align="center">
+     <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+      <li class="ui-first-child ui-last-child">
+        <a href="http://cbtis016.edu.mx/index.php/servicios-escolares/becas" target="_self" data-role="button">
+        <h2>Becas del gobierno Federal y Estatal</h2>
+        </a>
+       </li> 
+       <li class="ui-first-child ui-last-child">
+        <a href="https://www.gob.mx/cms/uploads/attachment/file/97534/Calendario_escolar_200_dias.pdf" target="_self" data-role="button">
+        <h2>Calendario escolar 2016-2017 (200 días)</h2>
+        </a>
+       </li>
+       <h3>PLATAFORMAS USADAS EN LA INSTITUCIÓN</h3>
+       <li class="ui-first-child ui-last-child">
+        <a href="https://www.duolingo.com/" target="_self" data-role="button">
+        <h2>Duolingo</h2>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+        <a href="https://es.khanacademy.org/" target="_self" data-role="button">
+        <h2>Khanacademy</h2>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+        <a href="https://www.edmodo.com/" target="_self" data-role="button">
+        <h2>Edmodo</h2>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+        <a href="https://damcbtis16.milaulas.com/" target="_self" data-role="button">
+        <h2>damcbtis16.milaulas.com/</h2>
+        </a>
+       </li>
+      </ul>
+     </div>
+     </div>
+        </div>        
+   </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>PROYECTO FINAL, ALFR</h4>
+     </div>
+    </div>
+    </div>
+    
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Requisitos para inscripción y ubicación de la institución</h1>
+      </div>
+      <div class="ui-content" align="center">
+        <h2>Ubicación</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.630910372328!2d-98.42659758510148!3d18.903448287187203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb47405555555%3A0x19bb49f598a8846f!2sCBTis+No+016!5e0!3m2!1ses!2smx!4v1496238841710" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="ui-content" data-content-theme="false" data-role="collapsible">
+      <h2>FICHA NUEVO INGRESO</h2> 
+      <p>Requisitos</p>           
+       <img src="imagenes/requisitos.jpg">
+        </div>
+    </div>
+     </div>
+     </div>
+</div>    
+      </div>
+      
+<div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>PROYECTO FINAL, ALFR</h4>
+     </div>
+    </div>
+    
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Técnico en Programación</h1>
+      </div>
+      <div data-role="main" class="ui-content" align="center">
+        <h1>TÉCNICO EN PROGRAMACIÓN</h1>        
+        <p>Persona con conocimientos, habilidades y actitudes, capaz de ingresar a empresas de desarrollo de software, diseño gráfico, mantenimiento, outsourcing.</p>
+        <p><strong>COMPETENCIAS PROFESIONALES</strong></p>
+      <img src="imagenes/compeprog.jpg" width="500">
+      <p><strong>MAPA CURRICULAR</strong></p>
+      <img src="imagenes/curriculaprogra.jpg" width="500" height="302">
+      
+      <div class="ui-content" data-content-theme="false" data-role="collapsible">
+       <h1>PERFIL DE EGRESO</h1>
+        <div align="justify">
+         <p>La formación que ofrece la carrera de Técnico en programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:</p>
+         <ul>
+           <ul>
+             <li>Instalación y desarrollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos.</li>
+             <li> Así como la configuración y administración de plataforma e-learning y Comercio electrónico.</li>
+           </ul>
+         </ul>
+         <ul>
+         </ul>
+         <p><strong>OPORTUNIDADES DE INSERCIÓN LABORAL</strong></p>
+         <ul>
+           <li>Desarrolladores de software</li>
+           <li> Analistas de sistemas</li>
+           <li>Analista de programas de cómputo</li>
+           <li> Programador de sistemas de cómputo</li>
+           <li> Edición de software y edición de software integrada con la reproducción</li>
+           <li> Escuelas de computación del sector privado</li>
+           <li> Servicios de diseño de sistemas de cómputo y servicios relacionados</li>
+           <li> Escuelas de computación del sector público</li>
+         </ul>
+         <p>&nbsp;</p>
+        </div>
+    </div>
+</div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>PROYECTO FINAL, ALFR</h4>
+     </div>
+    </div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Técnico en Electricidad</h1>
+      </div>
+       <div data-role="main" class="ui-content" align="center">
+      <h2>TÉCNICO EN ELECTRICIDAD</h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/48.jpg',1)"><img src="imagenes/47.jpg" width="250" height="149" id="Image16"></a>
+<p>La carrera de Técnico en Electricidad permite al estudiante sustentar la demanda de ocupación de Técnicos Electricistas en el sector productivo y de servicios, capaz de diseñar y realizar instalaciones eléctricas residenciales y comerciales, así como proporcionar mantenimiento a máquinas eléctricas.</p>
+      <p><strong>COMPETENCIAS PROFESIONALES</strong></p>
+      <img src="imagenes/compeelectrI.JPG" width="500">
+      <p><strong>MAPA CURRICULAR</strong></p>
+      <img src="imagenes/curriculaelectrI.JPG" width="500" height="302">
+      
+      <div class="ui-content" data-content-theme="false" data-role="collapsible">
+       <h1>PERFIL DE EGRESO</h1>
+        <div align="justify">
+         <p>Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Electricidad.</p>
+         <ul>
+           <ul>
+             <li> Desarrolla instalaciones eléctricas residenciales y comerciales.</li>
+             <li> Mantiene los motores y generadores de CA y CC.</li>
+             <li> Mantiene en operación los circuitos de control electromagnético y electrónico.</li>
+             <li> Mantiene los sistemas de iluminación y de energía renovable.</li>
+             <li> Mantiene instalaciones eléctricas de media y baja tensión.</li>
+           </ul>
+         </ul>
+         <ul>
+         </ul>
+         <p><strong>OPORTUNIDADES DE INSERCIÓN LABORAL</strong></p>
+         <p>Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales o las necesidades en su entorno social.</p>
+        </div>
+    </div>
+</div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>PROYECTO FINAL, ALFR</h4>
+     </div>
+    </div>
+    <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Técnico en Mecánica Industrial</h1>
+      </div>
+       <div data-role="main" class="ui-content" align="center">
+      <h2>TÉCNICO EN MECÁNICA INDUSTRIAL</h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/46.jpg',1)"><img src="imagenes/45.jpg" width="250" height="149" id="Image17"></a>
+<p>Profesionista que da mantenimiento a los sistemas de transmisión de potencia utilizando las máquinas herramientas convencionales, de control numérico, máquinas de soldar con arco eléctrico y oxigas auxiliándose de los procesos de ajuste de piezas mecánicas.</p>
+      <p><strong>COMPETENCIAS PROFESIONALES</strong></p>
+      <img src="imagenes/compemecaind.jpg" width="500">
+      <p><strong>MAPA CURRICULAR</strong></p>
+      <img src="imagenes/curriculameca.jpg" width="500" height="302">
+      
+      <div class="ui-content" data-content-theme="false" data-role="collapsible">
+       <h1>PERFIL DE EGRESO</h1>
+        <div align="justify">
+         <p>Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Mecánica Industrial:</p>
+         <ul>
+           <ul>
+             <li> Suelda y ajusta piezas mecánicas.</li>
+             <li> Maquina piezas mecánicas en talador y torno.</li>
+             <li> Maquina piezas mecánicas en fresadora, rectificadora y cepillo.</li>
+             <li> Maquina piezas mecánicas por CNC.</li>
+             <li> Mantiene sistemas de transmisión de potencia.</li>
+           </ul>
+         </ul>
+         <ul>
+         </ul>
+         <ul>
+         </ul>
+         <p><strong>OPORTUNIDADES DE INSERCIÓN LABORAL</strong></p>
+         <p>Industrias de transformación y procesos como: Textiles, del plástico, petroleras, metalmecánica, automotriz, pesqueras, mineras, siderúrgicas, agrícolas, alimenticia, química, de muebles, forestal, papelera, gráfica y en general todo tipo de industria de la producción y manufacturera que utilice maquinaria entre otras.</p>
+        </div>
+    </div>
+</div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>PROYECTO FINAL, ALFR</h4>
+     </div>
+    </div>
+    <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>TÉCNICO EN LOGÍSTICA</h1>
+      </div>
+      <div data-role="main" class="ui-content" align="center">
+      <h2>TÉCNICO EN LOGISTICA</h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/28.jpg',1)"><img src="imagenes/29.jpg" width="250" height="149" id="Image18"></a>
+<p>Ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a la administración de bienes, planificando los suministros destinados al almacenamiento de manera manual y electrónica, la organización de los nodos logísticos para el transporte de mercancías, así como proveer los servicios y atención al cliente sobre los movimientos y los costos de la cadena logística.</p>
+      <p><strong>COMPETENCIAS PROFESIONALES</strong></p>
+      <img src="imagenes/competenciasprof.jpg" width="500">
+      <p><strong>MAPA CURRICULAR</strong></p>
+      <img src="imagenes/mapcurricular.jpg" width="500" height="302">
+      
+      <div class="ui-content" data-content-theme="false" data-role="collapsible">
+       <h1>PERFIL DE EGRESO</h1>
+        <div align="justify">
+         <p>Durante el proceso de formación de los cinco módulos, el estudiante desarrollara o reforzará las siguientes competencias profesionales:</p>
+         <ul>
+           <ul>
+             <li> Supervisa el proceso de suministrio de bienes.</li>
+             <li> Apoya el proceso de administración al servicio de almacenaje de bienes.</li>
+             <li> Organiza el transporte de mercancías. </li>
+             <li>Proveve servicio de atencion al cliente sbre los movimientos de logistica. Organiza los costos de la cadena logística y de las competencias de productividad y empleabilidad:</li>
+             <li> Atencion al proceso</li>
+             <li>Planeación y organización</li>
+             <li>Ética profesional</li>
+             <li>Comunicación efectiva</li>
+             <li>Trabajo en equipo</li>
+             <li>Atención al cliente</li>
+             <li>Relaciones interpersonales</li>
+           </ul>
+         </ul>
+         <p><strong>OPORTUNIDADES DE INSERCIÓN LABORAL</strong></p>
+         <p>Nuestro país presenta una amplia diversidad de procesos de producción, desde los que utilizan tecnología moderna, hasta sistemas tradicionales; este hecho contribuye a diversificar las ocupaciones, los Comités interinstitucionales de Formación Profesional decidieron utilizar los siguientes: Sectores industriales, comerciales y de servicios, públicos o privados: Escuelas, constructoras, fábricas, centros comerciales, hospitales, inmobiliarias, hoteles, instituciones de crédito, despachos contables y tiendas de autoservicio. Autoempleo</p>
+        </div>
+    </div>
+</div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>PROYECTO FINAL, ALFR</h4>
+     </div>
+    </div>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>CAED (Centro de Atención para Estudiantes con Discapacidad) </h1>
+      </div>      
+      <div data-role="main" class="ui-content" align="center">
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/15.jpg',1)"><img src="imagenes/9.jpg" name="Image19" width="250" height="149" id="Image19"></a>
+<p>Es un programa que ofrece estudios de nivel medio superior para quienes tienen algún tipo de discapacidad: auditiva, motriz, visual o intelectual y desean continuar su preparación académica.</p>
+      <p>En esta modalidad educativa estudias por tu cuenta apoyándote en los libros de la preparatoria abierta, y puedes acudir a las asesorías que se imparten en los Centros de Atención para Personas con Discapacidad (CAED) ubicados en el Distrito Federal o en las Aulas Gilberto Rincón Gallardo, que se encuentran en los estados de la República Mexicana.</p>
+      <p>En estos centros o aulas puedes aclarar tus dudas o compartirlas con los docentes y otros compañeros.</p>
+      <p>El plan de estudios de esta opción educativa es el mismo que se cursa en la preparatoria abierta, la diferencia radica en la metodología. Por ejemplo, en el bachillerato no escolarizado las asesorías se imparten en lenguaje de señas para las personas con discapacidad auditiva, o bien, se trabaja con el sistema de Braille o con software especializado para atender a las personas con discapacidad visual.</p>
+      <p>De esta forma, cuando te sientas con la preparación suficiente sobre alguna de las materias, puedes presentar el examen en los centros correspondientes y acreditarla.</p>
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+        <a href="http://www.sems.gob.mx/es/sems/directorios_caeds_df_aulas_gilberto_rincon_gallardo_estados" target="_self" data-role="button">
+        <h2>DIRECTORIOS DE CAEDS, EN EL DISTRITO FEDERAL; Y DE LAS AULAS GILBERTO RINCÓN GALLARDO, EN LOS ESTADOS</h2>
+        </a>
+       </li> 
+      </ul>
+      
+        <div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>PROYECTO FINAL, ALFR</h4>
+     </div>
+     </div>
+    </div>
+   </div>   
+ </div>
+</body>
+</html>
